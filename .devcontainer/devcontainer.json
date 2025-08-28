@@ -12,6 +12,11 @@
                 "Tyriar.lorem-ipsum"
             ],
             "settings": {
+                // hide .devcontainer and .github folders
+                "files.exclude": {
+                    "**/.devcontainer": true,
+                    "**/.github": true
+                },
                 // enable to use deno as the typescript language server, see "https://docs.deno.com/runtime/getting_started/installation/"
                 "deno.enable": true,
                 // enable to use deno as the testing framework
