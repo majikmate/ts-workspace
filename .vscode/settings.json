@@ -1,4 +1,6 @@
 {
+    // configure the innitial default theme
+    "workbench.colorTheme": "Visual Studio Dark",
     // enable to use deno as the typescript language server, see "https://docs.deno.com/runtime/getting_started/installation/"
     "deno.enable": true,
     // enable to use deno as the testing framework
