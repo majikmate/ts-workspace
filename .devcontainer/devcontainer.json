@@ -1,9 +1,9 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
 {
-    "name": "Deno TypeScript",
+    "name": "majikmate classroom codespace image",
     // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-    "image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm",
+    "image": "ghcr.io/majikmate/classroom-codespace-image:latest",
     "customizations": {
         "vscode": {
             "extensions": [
@@ -83,11 +83,11 @@
         }
     },
     // Features to add to the dev container. More info: https://containers.dev/features.
-    "features": {
-        "ghcr.io/devcontainers-community/features/deno": {
-            "version": "latest"
-        }
-    }
+    // "features": {
+    //     "ghcr.io/devcontainers-community/features/deno": {
+    //         "version": "latest"
+    //     }
+    // }
     // Use 'postCreateCommand' to run commands after the container is created.
     // "postCreateCommand": ""
 
