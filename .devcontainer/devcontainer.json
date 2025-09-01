@@ -4,7 +4,7 @@
 {
     "name": "majikmate classroom codespace image",
     // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-    "image": "ghcr.io/majikmate/classroom-codespace-image:1.2.1",
+    "image": "ghcr.io/majikmate/classroom-codespace-image:1.2.2",
     "customizations": {
         "vscode": {
             "extensions": [
