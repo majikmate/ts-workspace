@@ -1,0 +1,26 @@
+name: Codespace Rebuild
+
+on:
+    push:
+        branches:
+            - main # Or the branch students will be working on
+        paths:
+            - ".devcontainer/**"
+
+jobs:
+    rebuild_codespace:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Authenticate with GitHub CLI
+              env:
+                  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              run: |
+                  echo "$GH_TOKEN" | gh auth login --with-token
+
+            - name: Rebuild codespace for this repo
+              run: |
+                  gh codespace list --repo ${{ github.repository }} --json name | jq -r '.[].name' | while read codespace_name; do
+                    echo "Rebuilding codespace: $codespace_name"
+                    gh codespace rebuild --full --codespace "$codespace_name"
+                  done
