@@ -8,7 +8,8 @@
     "customizations": {
         "vscode": {
             "extensions": [
-                "Tyriar.lorem-ipsum"
+                "Tyriar.lorem-ipsum",
+                "ritwickdey.liveserver"
             ]
         }
     }
